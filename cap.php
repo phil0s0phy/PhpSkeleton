@@ -2,7 +2,7 @@
 class cap
 {
 
-	function cap($var1, $var2, $var3, $var4)
+	function toString($var1, $var2, $var3, $var4)
 	{
 		if($var1 === 1)
 		{
@@ -366,15 +366,17 @@ class cap
 	}
 }
 
-$cap = new cap(1, 1, 1, 1);
+$cap = new cap();
+
+$cap->toString(1, 1, 1, 1);
 echo "\n\n";
 
-$cap = new cap(2, 1, 1, 1);
+$cap->toString(2, 1, 1, 1);
 echo "\n\n";
 
-$cap = new cap(3, 1, 1, 1);
+$cap->toString(3, 1, 1, 1);
 echo "\n\n";
 
-$cap = new cap(1, x, 1, 1);
+$cap->toString(1, x, 1, 1);
 echo "\n\n";
 ?>
